@@ -21,6 +21,10 @@
       "cache": true
     }
   },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
+  },
   "namedInputs": {
     "default": [
       "{projectRoot}/**/*",
