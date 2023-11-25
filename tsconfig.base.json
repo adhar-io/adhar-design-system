@@ -14,7 +14,29 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@adhar-design-system/adhar-components": ["dist/libs/adhar-components"],
+      "@adhar-design-system/adhar-components-angular": [
+        "packages/adhar-components-angular/src/index.ts"
+      ],
+      "@adhar-design-system/adhar-components-react": [
+        "packages/adhar-components-react/src/index.ts"
+      ],
+      "@adhar-design-system/adhar-components/*": [
+        "dist/libs/adhar-components/dist/components/*"
+      ],
+      "@adhar-design-system/adhar-components/loader": [
+        "dist/libs/adhar-components/loader"
+      ],
+      "@adhar-design-system/adhar-design-tokens": [
+        "packages/adhar-design-tokens/src/index.ts"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "references": [
+    {
+      "path": "./.storybook/tsconfig.json"
+    }
+  ]
 }
