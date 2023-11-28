@@ -30,6 +30,9 @@
       ],
       "@adhar-design-system/adhar-design-tokens": [
         "packages/adhar-design-tokens/src/index.ts"
+      ],
+      "@undefined/adhar-components-svelte": [
+        "packages/adhar-components-svelte/src/index.ts"
       ]
     }
   },

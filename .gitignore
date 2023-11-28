@@ -43,3 +43,4 @@ packages/adhar-components-react/**/generated
 
 .angular
 packages/adhar-components-angular/**/generated
+packages/adhar-components-svelte/**/generated

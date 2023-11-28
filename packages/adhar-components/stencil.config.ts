@@ -9,6 +9,8 @@ import {
   ValueAccessorConfig,
 } from '@stencil/angular-output-target';
 
+import { svelteOutputTarget } from '@stencil/svelte-output-target';
+
 export const config: Config = {
   namespace: 'adhar-components',
   taskQueue: 'async',
@@ -56,6 +58,13 @@ export const config: Config = {
       directivesArrayFile:
         '../../../packages/adhar-components-angular/src/generated/directives/index.ts',
       valueAccessorConfigs: angularValueAccessorBindings,
+    }),
+
+    svelteOutputTarget({
+      componentCorePackage: '@adhar-design-system/adhar-components',
+      proxiesFile:
+        '../../../packages/adhar-components-svelte/src/generated/components.ts',
+      includeDefineCustomElements: true,
     }),
   ],
 };
