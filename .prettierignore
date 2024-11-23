@@ -1,5 +1,7 @@
-# Add files here to ignore them from prettier formatting
-/dist
-/coverage
-/.nx/cache
-.angular
+dist
+node_modules
+.next
+build
+.contentlayer
+apps/www/pages/api/registry.json
+**/fixtures
