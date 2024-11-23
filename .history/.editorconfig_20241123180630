@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+# Editor configuration, see http://editorconfig.org
+=======
+# editorconfig.org
+>>>>>>> 805ed4120a6a8ae6f6e9714cbd776e18eeba92c7
+root = true
+
+[*]
+charset = utf-8
+<<<<<<< HEAD
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+=======
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+>>>>>>> 805ed4120a6a8ae6f6e9714cbd776e18eeba92c7
