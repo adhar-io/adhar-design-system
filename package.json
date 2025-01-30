@@ -1,5 +1,5 @@
 {
-  "name": "adhar-ui",
+  "name": "shadcn-ui",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -10,14 +10,13 @@
   },
   "workspaces": [
     "apps/*",
-    "packages/*",
-    "templates/*"
+    "packages/*"
   ],
   "scripts": {
     "build": "turbo run build",
     "build:cli": "turbo --filter=shadcn build",
-    "build:registry": "pnpm --filter=www build:registry && pnpm format:write -- --loglevel silent",
-    "registry:build": "pnpm --filter=www build:registry && pnpm format:write -- --loglevel silent",
+    "build:registry": "pnpm --filter=www build:registry && pnpm --filter=www lint:fix && pnpm format:write -- --loglevel silent",
+    "registry:build": "pnpm --filter=www build:registry && pnpm --filter=www lint:fix && pnpm format:write -- --loglevel silent",
     "registry:capture": "pnpm --filter=www registry:capture",
     "dev": "turbo run dev --parallel",
     "cli:dev": "turbo --filter=shadcn-ui dev",
